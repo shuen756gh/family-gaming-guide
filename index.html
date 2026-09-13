@@ -159,6 +159,22 @@ td.yes{color:var(--lime);font-weight:700}
 .channel a{margin-top:auto;font-weight:700;text-decoration:none}
 .channel a:hover{text-decoration:underline}
 
+/* ---------- videos ---------- */
+.videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;margin:14px 0}
+.video{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;text-decoration:none;color:var(--ink);transition:transform .2s,box-shadow .2s,border-color .2s}
+.video:hover{transform:translateY(-3px);border-color:rgba(255,0,51,.55);box-shadow:0 10px 36px rgba(255,0,51,.18)}
+.video .thumb{position:relative;aspect-ratio:16/9;background:var(--surface-solid)}
+.video .thumb img{width:100%;height:100%;object-fit:cover}
+.video .thumb::after{content:"▶";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:58px;height:40px;border-radius:12px;background:rgba(255,0,51,.92);color:#fff;display:grid;place-items:center;font-size:18px;box-shadow:0 6px 20px rgba(0,0,0,.4)}
+.video .dur{position:absolute;right:8px;bottom:8px;z-index:1;font-size:12px;padding:1px 6px;border-radius:5px;background:rgba(0,0,0,.8);color:#fff}
+.video .info{padding:12px 16px 16px;display:flex;flex-direction:column;gap:6px}
+.video .game-tag{align-self:flex-start;font-family:var(--display);font-size:12px;letter-spacing:.06em;padding:1px 8px;border-radius:6px;border:1px solid currentColor}
+.video.rv .game-tag{color:var(--pink)}
+.video.bf .game-tag{color:var(--gold)}
+.video .vtitle{font-weight:700;line-height:1.55;color:#fff}
+.video .meta{font-size:13px;color:var(--muted)}
+.video .meta em{font-style:normal;color:var(--orange)}
+
 footer{border-top:1px solid var(--line);padding:26px 0 52px;color:var(--muted);font-size:14px;background:rgba(0,0,0,.2)}
 .sources li{word-break:break-word}
 
@@ -346,6 +362,28 @@ footer{border-top:1px solid var(--line);padding:26px 0 52px;color:var(--muted);f
   <span class="stage"><b>STAGE 03</b></span>
   <h2>YouTube 遊戲影片</h2>
   <p class="lead">「有感筆電」其實不是筆電評測頻道，而是以 Roblox 遊戲實況和挑戰為主、破百萬訂閱的中文頻道。</p>
+
+  <h3>RIVALS、Blox Fruits 相關影片</h3>
+  <p>查詢 2026/8/30～9/13 這兩週，有感筆電沒有發布這兩款遊戲的影片（這段時間主要是動物醫院、Doors 等）。RIVALS 放有感筆電<b>最近的一部</b>；Blox Fruits 改放知名英文 YouTuber 近兩週介紹大改版的影片。</p>
+  <div class="videos">
+    <a class="video rv" href="https://www.youtube.com/watch?v=8LKCUE02qxw" rel="noopener">
+      <div class="thumb"><img src="https://i.ytimg.com/vi/8LKCUE02qxw/hq720.jpg" alt="有感筆電 RIVALS 直播影片縮圖" loading="lazy"><span class="dur">1:29:22</span></div>
+      <div class="info">
+        <span class="game-tag">RIVALS</span>
+        <span class="vtitle">跟觀眾玩 Roblox 競爭者！我這新手要來1v1被虐了？現在有 2 周年更新的免費皮膚！【Rivals 對手 直播】</span>
+        <span class="meta">直播錄影．2026 年 7 月 4 日．<em>約 2 個月前</em></span>
+      </div>
+    </a>
+    <a class="video bf" href="https://www.youtube.com/watch?v=1JOr-Reiw_M" rel="noopener">
+      <div class="thumb"><img src="https://i.ytimg.com/vi/1JOr-Reiw_M/hq720.jpg" alt="Kitt Gaming Blox Fruits Update 30 影片縮圖" loading="lazy"><span class="dur">23:39</span></div>
+      <div class="info">
+        <span class="game-tag">BLOX FRUITS</span>
+        <span class="vtitle">Blox Fruits ALL Changes in UPDATE 30!!（第 30 版大更新的所有改變）</span>
+        <span class="meta">Kitt Gaming（約 583 萬訂閱，英文）．2026 年 9 月 6 日．<em>約 1 週前</em></span>
+      </div>
+    </a>
+  </div>
+  <p class="credit">RIVALS 那部是約 1.5 小時的直播錄影，可以跟孩子約好只看其中一段；Blox Fruits 那部是英文，可以開字幕。觀看時也可以一起留意送 Robux、課金、抽造型這類內容。</p>
 
   <h3>推薦三個頻道：從「看別人玩」到「學自己做」</h3>
   <div class="grid">
