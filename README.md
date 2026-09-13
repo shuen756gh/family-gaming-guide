@@ -18,6 +18,17 @@
 | `downloads/家庭遊戲約定_v2.pdf` | 目前版本的約定（PDF，方便列印） |
 | `downloads/家庭遊戲約定_v1.docx` | 第 1 版，保留對照 |
 | `tools/make_agreement.js` | 產生約定 Word 檔的腳本 |
+| `data/roblox-images.json` | RIVALS、Blox Fruits 官方遊戲圖片網址（直接連結 Roblox CDN，不複製圖片） |
+| `tools/update_roblox_images.mjs` | 從 Roblox API 更新圖片網址 |
+| `.github/workflows/refresh-roblox-images.yml` | 每月 1 日自動更新圖片網址（Roblox CDN 連結約 180 天會過期），也可手動執行 |
+
+## 遊戲圖片
+
+圖片版權屬 Nosniy Games（RIVALS）與 Gamer Robot Inc（Blox Fruits），本站只連結官方圖片。手動更新：
+
+```bash
+node tools/update_roblox_images.mjs
+```
 
 ## 更新約定
 
