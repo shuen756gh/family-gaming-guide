@@ -7,7 +7,7 @@
 <meta name="description" content="Roblox、YouTube 遊戲影片、Discord 語音聊天，家長要注意什麼？附可列印的家庭遊戲約定。">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#0b0d17">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><path fill='%23FFD23D' d='M20 14h24c9 0 15 7 17 17l2 13c1 7-3 12-9 12-4 0-7-2-9-6l-2-4H21l-2 4c-2 4-5 6-9 6-6 0-10-5-9-12l2-13C5 21 11 14 20 14z'/><g fill='%230B0D17'><rect x='13' y='27' width='14' height='5' rx='1.5'/><rect x='17.5' y='22.5' width='5' height='14' rx='1.5'/><circle cx='44' cy='26' r='3.5'/><circle cx='51' cy='33' r='3.5'/></g></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&family=Russo+One&display=swap" rel="stylesheet">
@@ -40,7 +40,8 @@ img{max-width:100%;display:block}
 /* ---------- top bar ---------- */
 header.top{position:sticky;top:0;z-index:20;background:rgba(11,13,23,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 header.top .wrap{display:flex;gap:6px;align-items:center;overflow-x:auto;padding-top:10px;padding-bottom:10px;white-space:nowrap;scrollbar-width:none}
-header.top .logo{font-family:var(--display);letter-spacing:.04em;margin-right:12px;font-size:15px;color:#fff}
+header.top .logo{display:inline-flex;align-items:center;gap:8px;font-family:var(--display);letter-spacing:.04em;margin-right:12px;font-size:15px;color:#fff}
+header.top .logo svg{width:24px;height:24px;flex:none;filter:drop-shadow(0 0 6px rgba(255,210,61,.6))}
 header.top .logo span{color:var(--lime)}
 header.top nav a{display:inline-block;padding:5px 14px;border-radius:999px;text-decoration:none;color:var(--muted);font-size:14px;border:1px solid transparent;transition:.15s}
 header.top nav a:hover{color:var(--cyan);border-color:rgba(61,224,255,.45);box-shadow:0 0 14px rgba(61,224,255,.25)}
@@ -190,7 +191,7 @@ footer{border-top:1px solid var(--line);padding:26px 0 52px;color:var(--muted);f
 
 <header class="top">
   <div class="wrap">
-    <span class="logo">🎮 PARENT<span>GUIDE</span></span>
+    <span class="logo"><svg viewBox="0 0 64 64" aria-hidden="true"><path fill="#FFD23D" d="M20 14h24c9 0 15 7 17 17l2 13c1 7-3 12-9 12-4 0-7-2-9-6l-2-4H21l-2 4c-2 4-5 6-9 6-6 0-10-5-9-12l2-13C5 21 11 14 20 14z"/><g fill="#0B0D17"><rect x="13" y="27" width="14" height="5" rx="1.5"/><rect x="17.5" y="22.5" width="5" height="14" rx="1.5"/><circle cx="44" cy="26" r="3.5"/><circle cx="51" cy="33" r="3.5"/></g></svg>PARENT<span>GUIDE</span></span>
     <nav>
       <a href="#roblox">Roblox</a>
       <a href="#agreement">家庭約定</a>
